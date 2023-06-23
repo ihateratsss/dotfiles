@@ -1,0 +1,60 @@
+* {
+    font-family: FreeSans;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+window#waybar {
+    background-color: transparent;
+}
+
+#tray menu {
+    background: transparent;
+}
+
+button {
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces {
+    padding-right: 10px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+}
+
+#workspaces button:hover {
+  
+    
+}
+
+#workspaces button.focused {
+    background: #655d4a;
+    color: #ffffff;
+    transition: 1s;
+}
+
+#workspaces button.urgent {
+	background: red;
+}
+
+#window {
+    padding-left: 10px;
+}
+
+#clock{
+	
+}
+#cpu,
+#memory,
+#language,
+#pulseaudio,
+#tray {
+    padding-left: 10px; 
+    padding-right: 10px;
+    padding: 0px 10px;
+}

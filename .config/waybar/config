@@ -1,0 +1,34 @@
+{
+//    "layer": "top",
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "sway/language", "tray"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "cpu": {
+
+        "interval": 1,
+    },
+    "memory": {
+        "interval": 1,
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}%",
+        "format-muted": "{format_source}",
+   	"format-source": "in {volume}%",
+        "format-source-muted": "muted", 
+        "on-click": "pavucontrol",
+       // "ignored-sinks": ["Echo Cancellation Sink"]
+	"format-muted": "",
+	"format-icons": {
+      		"default": [" ", " "] // 醙
+   	 },
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%T}",
+        "format-alt": "{:%F %T}"
+    }
+}
